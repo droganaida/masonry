@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>#Blondiecode: Адаптивные блоки - кирпичная кладка</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li class="active">
+                <a href="index.html">JQuery Masonry</a>
+            </li>
+            <li>
+                <a href="flexbox.html">FlexBox колонки</a>
+            </li>
+            <li>
+                <a href="flexmasonry.html">FlexBox кирпичики</a>
+            </li>
+            <li>
+                <a href="grid.html">Grid колонки</a>
+            </li>
+            <li>
+                <a href="columns.html">Column-count</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="wrapper js">
+    <div class="masonry">
+        <div class="item">
+            <img src="https://dummyimage.com/150x120/b38cc9/fff.jpg&text=котэ">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/300x200/011936/fff.jpg&text=котейка">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/70x120/465362/fff.jpg&text=кот">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/80x100/82A3A1/fff.jpg&text=ня">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/900x200/C0DFA1/fff.jpg&text=длиннокот">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/150x160/b38cc9/fff.jpg&text=кошка">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/600x480/465362/fff.jpg&text=колбаска">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/180x200/b38cc9/fff.jpg&text=кот">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/240x240/C0DFA1/fff.jpg&text=котан">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/100x120/9FC490/fff.jpg&text=котэ">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/700x300/82A3A1/fff.jpg&text=сосисоны">
+        </div>
+        <div class="item">
+            <img src="https://dummyimage.com/500x100/C0DFA1/fff.jpg&text=пельмешка">
+        </div>
+    </div>
+</main>
+<footer><a href="https://www.youtube.com/channel/UCSsg9NLCse2XQCIRgfmJu3Q" target="_blank">#BlondieCode © 2017</a></footer>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery.masonry.min.js"></script>
+<script>
+
+    $(window).on('load', function () {
+
+        $('.masonry').masonry({
+            // options...
+            itemSelector: '.item'
+        });
+    });
+
+</script>
+</body>
+</html>
